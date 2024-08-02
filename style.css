@@ -1,0 +1,64 @@
+/* Variables */
+:root {
+  --font-color-primary: #111;
+  --font-color-secondary: #f0f0f0;
+}
+
+/* Box model */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Body */
+body {
+  font-family: sans-serif;
+  color: var(--font-color-primary);
+}
+
+/* Desktop Menu */
+.desktop-menu__wrapper {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.desktop-menu {
+  width: 100%;
+  max-width: 1024px;
+  margin: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Title */
+.title {
+  font-size: 1.5rem;
+}
+
+/* Menu Links */
+.menu-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.menu-links__item {
+  font-size: 1.4rem;
+}
+
+.menu-links__link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.menu-links__link:hover {
+  color: #888;
+}
