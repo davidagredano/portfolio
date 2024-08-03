@@ -1,7 +1,7 @@
 /* Variables */
 :root {
   --font-color-primary: #111;
-  --font-color-secondary: #f0f0f0;
+  --font-color-secondary: #888;
 }
 
 /* Box model */
@@ -56,9 +56,20 @@ body {
 .menu-links__link {
   text-decoration: none;
   color: inherit;
-  transition: color 0.2s;
+  transition: all 0.2s;
 }
 
 .menu-links__link:hover {
-  color: #888;
+  color: var(--font-color-secondary);
+}
+
+.menu-links__link--cta {
+  padding: 12px 20px;
+  border-radius: 4px;
+  border: 2px solid var(--font-color-primary);
+}
+
+.menu-links__link--cta:hover {
+  background-color: #eee;
+  color: var(--font-color-primary);
 }
