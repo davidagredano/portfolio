@@ -28,6 +28,15 @@ body {
   padding: 40px 32px;
 }
 
+/* Section */
+.section {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 /* Desktop Menu */
 .desktop-menu {
   width: 100%;
@@ -75,11 +84,8 @@ body {
 }
 
 /* Hero section */
-
-.hero-section {
-  width: 100%;
-  max-width: 1024px;
-  display: flex;
+.section--hero {
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 56px;
@@ -124,4 +130,28 @@ body {
 .hero-section__cta:hover {
   color: var(--font-color-primary);
   background-color: #eee;
+}
+
+/* About section */
+.section--about {
+  max-width: 65ch;
+}
+
+.section__title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section__text {
+  line-height: 1.5;
+}
+
+.section__text--bigger {
+  font-size: 1.2rem;
 }
