@@ -25,20 +25,13 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  padding: 32px;
+  padding: 40px 32px;
 }
 
 /* Desktop Menu */
-.desktop-menu__wrapper {
-  height: 100px;
-  display: flex;
-  justify-content: center;
-}
-
 .desktop-menu {
   width: 100%;
   max-width: 1024px;
-  margin: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
