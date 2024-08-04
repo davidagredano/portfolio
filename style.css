@@ -116,11 +116,16 @@ body {
 
 .section__image--hero {
   height: 250px;
+  border-radius: 8px;
 }
 
 .section__content--hero {
   align-items: flex-start;
   gap: 32px;
+}
+
+.section__header--hero {
+  margin-top: 0;
 }
 
 .section__title--hero {
