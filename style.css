@@ -223,6 +223,8 @@ body {
 
 .project__technology {
   font-size: 0.9rem;
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 .project__links {
