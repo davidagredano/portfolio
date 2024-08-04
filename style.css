@@ -32,7 +32,7 @@ body {
 /* Section */
 .section {
   width: 100%;
-  max-width: 1024px;
+  max-width: 960px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -63,7 +63,7 @@ body {
 /* Desktop Menu */
 .desktop-menu {
   width: 100%;
-  max-width: 1024px;
+  max-width: 960px;
   display: flex;
   justify-content: space-between;
   align-items: center;
