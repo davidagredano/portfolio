@@ -26,7 +26,7 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  padding: 16px 32px 24px;
+  padding: 16px 24px 24px;
 }
 
 /* Section */
@@ -35,14 +35,13 @@ body {
   max-width: 960px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 24px;
 }
 
 .section__header {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
   margin-top: 32px;
+  width: 100%;
 }
 
 .section__title {
@@ -50,14 +49,28 @@ body {
   font-weight: bold;
 }
 
+.section__subtitle {
+  font-size: 1.5rem;
+}
+
 .section__content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
+.section__content--text {
+  max-width: 65ch;
+}
+
 .section__text {
   line-height: 1.5;
+}
+
+.section__text--bigger {
+  font-size: 1.2rem;
+  line-height: 1.4;
 }
 
 /* Button */
@@ -92,15 +105,20 @@ body {
 }
 
 .container--desktop-menu {
-  padding: 40px 32px;
+  padding: 32px 16px;
 }
 
 /* Title */
 .title {
+  display: none;
   font-size: 1.5rem;
 }
 
 /* Navigation */
+.nav {
+  flex: 1;
+}
+
 .nav__links {
   display: flex;
   justify-content: center;
@@ -124,10 +142,10 @@ body {
 
 /* Hero section */
 .section--hero {
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 56px;
+  gap: 40px;
 }
 
 .section__image--hero {
@@ -136,42 +154,41 @@ body {
 }
 
 .section__content--hero {
-  align-items: flex-start;
+  align-items: center;
   gap: 32px;
 }
 
 .section__header--hero {
   margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 .section__title--hero {
   font-size: 2.5rem;
 }
 
-.hero-section__subtitle {
+.section__subtitle--hero {
   font-size: 2rem;
 }
 
 /* About section */
-.section--about {
+.section__content--about {
+  gap: 32px;
   max-width: 65ch;
 }
 
-.section__text--bigger {
-  font-size: 1.2rem;
-  line-height: 1.4;
-}
-
-/* Experience section */
 .skill-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 8px;
 }
 
 .skill-list__item {
-  padding: 8px 16px;
-  font-size: 1.2rem;
+  padding: 8px 12px;
+  font-size: 1.1rem;
   border-radius: 4px;
   border: 2px solid var(--font-color-primary);
 }

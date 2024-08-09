@@ -1,0 +1,45 @@
+@media (min-width: 640px) {
+  /* Container */
+  .container {
+    padding-inline: 32px;
+  }
+
+  /* Title */
+  .title {
+    display: block;
+    flex: 1;
+  }
+
+  /* Navigation */
+  .nav {
+    flex: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Desktop Menu */
+  .container--desktop-menu {
+    padding: 40px 32px;
+  }
+
+  /* Hero section */
+  .section--hero {
+    flex-direction: row;
+    gap: 48px;
+  }
+
+  .section__content--hero {
+    width: auto;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .section__header--hero {
+    align-items: flex-start;
+  }
+
+  .section__content--about {
+    flex-direction: row;
+    max-width: none;
+  }
+}
