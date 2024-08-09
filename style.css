@@ -26,7 +26,7 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  padding: 40px 32px;
+  padding: 16px 32px 24px;
 }
 
 /* Section */
@@ -35,7 +35,7 @@ body {
   max-width: 960px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
 }
 
 .section__header {
@@ -67,6 +67,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.container--desktop-menu {
+  padding: 40px 32px;
 }
 
 /* Title */
@@ -158,6 +162,7 @@ body {
 
 .section__text--bigger {
   font-size: 1.2rem;
+  line-height: 1.4;
 }
 
 /* Experience section */
