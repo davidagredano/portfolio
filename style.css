@@ -103,6 +103,7 @@ body {
 /* Navigation */
 .nav__links {
   display: flex;
+  justify-content: center;
   gap: 32px;
   list-style: none;
 }
@@ -120,7 +121,6 @@ body {
 .nav__link:hover {
   color: var(--font-color-secondary);
 }
-
 
 /* Hero section */
 .section--hero {
@@ -238,5 +238,9 @@ body {
 
 /* Footer section */
 .container--footer {
-  padding: 40px 32px;
+  padding: 48px 32px 72px;
+}
+
+.footer__text {
+  text-align: center;
 }
