@@ -60,6 +60,28 @@ body {
   line-height: 1.5;
 }
 
+/* Button */
+.btn {
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  border: 2px solid var(--font-color-primary);
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--font-color-primary);
+  transition: all 0.2s;
+}
+
+.btn--fluid {
+  width: 100%;
+  text-wrap: nowrap;
+}
+
+.btn:hover {
+  color: var(--font-color-primary);
+  background-color: #eee;
+}
+
 /* Desktop Menu */
 .desktop-menu {
   width: 100%;
@@ -99,16 +121,6 @@ body {
   color: var(--font-color-secondary);
 }
 
-.nav__link--cta {
-  padding: 12px 20px;
-  border-radius: 4px;
-  border: 2px solid var(--font-color-primary);
-}
-
-.nav__link--cta:hover {
-  background-color: #eee;
-  color: var(--font-color-primary);
-}
 
 /* Hero section */
 .section--hero {
@@ -140,21 +152,6 @@ body {
   font-size: 2rem;
 }
 
-.hero-section__cta {
-  text-decoration: none;
-  padding: 12px 20px;
-  font-size: 1.4rem;
-  color: var(--font-color-primary);
-  border-radius: 4px;
-  border: 2px solid var(--font-color-primary);
-  transition: all 0.2s;
-}
-
-.hero-section__cta:hover {
-  color: var(--font-color-primary);
-  background-color: #eee;
-}
-
 /* About section */
 .section--about {
   max-width: 65ch;
@@ -169,16 +166,17 @@ body {
 .skill-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 12px;
 }
 
 .skill-list__item {
-  padding: 12px 20px;
+  padding: 8px 16px;
   font-size: 1.2rem;
   border-radius: 4px;
   border: 2px solid var(--font-color-primary);
 }
 
+/* Projects */
 .project-cards {
   display: flex;
   flex-wrap: wrap;
@@ -238,20 +236,7 @@ body {
   margin-top: auto;
 }
 
-.project__link {
-  text-decoration: none;
-  flex: 1;
-  text-wrap: nowrap;
-  padding: 12px 20px;
-  font-size: 1.4rem;
-  text-align: center;
-  color: var(--font-color-primary);
-  border-radius: 4px;
-  border: 2px solid var(--font-color-primary);
-  transition: all 0.2s;
-}
-
-.project__link:hover {
-  color: var(--font-color-primary);
-  background-color: #eee;
+/* Footer section */
+.container--footer {
+  padding: 40px 32px;
 }
